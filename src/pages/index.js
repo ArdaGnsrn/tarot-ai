@@ -139,7 +139,7 @@ export default function Home() {
                         </div>
 
                         {(!loading && response === "") && (
-                            <div className="grid grid-cols-10 gap-1 mt-10 ">
+                            <div className="grid grid-cols-6 md:grid-cols-10 gap-1 mt-10 ">
                                 {tarotDeck.map((card, index) => {
                                     let isFlipped = flippedCards.includes(card.name)
                                     return (
