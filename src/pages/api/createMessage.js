@@ -1,5 +1,3 @@
-import { NextApiRequest, NextApiResponse } from 'next'
-
 export default async function createMessage(req, res) {
     const { messages } = req.body
     const apiKey = process.env.OPENAI_API_KEY
