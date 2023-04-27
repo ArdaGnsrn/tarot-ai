@@ -103,7 +103,7 @@ export default function Home() {
                                 />
                             </div>
                         </div>
-                        <div className="grid grid-cols-10 gap-1 mt-5 mb-5 ">
+                        <div className="grid grid-cols-6 md:grid-cols-10 gap-1 mt-5 mb-5 ">
                             {tarotDeck.filter(t => flippedCards.includes(t.name)).map((card, index) => (
                                 <div>
                                     <Image
