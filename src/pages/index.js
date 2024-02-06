@@ -58,16 +58,25 @@ export default function Home() {
         <>
             <Head>
                 <title>TarotAI - Yapay Zeka Destekli Tarot Falcınız</title>
-                <meta name="description" content="Yapay zeka destekli tarot falcınız. İsminizi ve falınızı yazın, kartları seçin ve yorumlayın. Tarot falı bakmak hiç bu kadar kolay olmamıştı." />
+                <meta name="description"
+                      content="Yapay zeka destekli tarot falcınız. İsminizi ve falınızı yazın, kartları seçin ve yorumlayın. Tarot falı bakmak hiç bu kadar kolay olmamıştı."/>
 
-                <meta property="og:title" content="TarotAI - Yapay Zeka Destekli Tarot Falcınız" />
-                <meta property="og:description" content="Yapay zeka destekli tarot falcınız. İsminizi ve falınızı yazın, kartları seçin ve yorumlayın. Tarot falı bakmak hiç bu kadar kolay olmamıştı." />
-                <meta property="og:image" content="https://snworksceo.imgix.net/dpn-34s/0b523c5c-4e9a-42e1-9ae1-b518b3c66180.sized-1000x1000.jpg?w=800" />
-                <meta property="og:url" content="https://tarotai.vercel.app/" />
+                <meta property="og:title" content="TarotAI - Yapay Zeka Destekli Tarot Falcınız"/>
+                <meta property="og:description"
+                      content="Yapay zeka destekli tarot falcınız. İsminizi ve falınızı yazın, kartları seçin ve yorumlayın. Tarot falı bakmak hiç bu kadar kolay olmamıştı."/>
+                <meta property="og:image"
+                      content="https://snworksceo.imgix.net/dpn-34s/0b523c5c-4e9a-42e1-9ae1-b518b3c66180.sized-1000x1000.jpg?w=800"/>
+                <meta property="og:url" content="https://tarotai.vercel.app/"/>
 
-                <link rel="icon" href="/favicon.png" />
-                <link rel="apple-touch-icon" href="/favicon.png" />
-                <link rel="shortcut icon" href="/favicon.png" />
+                <link rel="icon" href="/favicon.png"/>
+                <link rel="apple-touch-icon" href="/favicon.png"/>
+                <link rel="shortcut icon" href="/favicon.png"/>
+
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
+
+                {tarotDeck.map((card, index) => (
+                    <link rel="preload" href={`/decks/rws/${card.img}`} as="image"/>
+                ))}
             </Head>
             <div className="flex flex-col p-4 mx-auto max-w-screen-md md:py-10 h-full">
                 <main>
