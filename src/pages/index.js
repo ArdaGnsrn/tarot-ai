@@ -75,7 +75,7 @@ export default function Home() {
                 <link rel="preconnect" href="https://fonts.gstatic.com"/>
 
                 {tarotDeck.map((card, index) => (
-                    <link rel="preload" href={`/decks/rws/${card.img}`} as="image"/>
+                    <link rel="preload" href={`/_next/image?url=${encodeURIComponent(`/decks/rws/${card.img}`)}&w=384&q=75`} as="image"/>
                 ))}
             </Head>
             <div className="flex flex-col p-4 mx-auto max-w-screen-md md:py-10 h-full">
