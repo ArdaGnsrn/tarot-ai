@@ -5,7 +5,7 @@ export default async function createMessage(req, res) {
 
     const body = JSON.stringify({
         messages,
-        model: 'gpt-3.5-turbo-0125',
+        model: 'gpt-4o-mini-2024-07-18',
         stream: false,
     })
 
